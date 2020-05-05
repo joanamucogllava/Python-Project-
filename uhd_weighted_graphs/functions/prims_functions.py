@@ -1,23 +1,26 @@
 def cost(graph, e):
     return graph.edges()[e]['weight']
 
-def is_spanning(graph, subgraph):
-    return graph.nodes() == subgraph.nodes()
 
-def possible_prims_edges(graph, tree):
-    possible_e = []
-    for e in set(graph.edges()) - set(tree.edges()):
-        for v in tree.nodes():
-            if v in e:
-                possible_e.append(e)
-            
-    return possible_e
+def valid_incident_edges(graph, tree):
+    edges = []
+    for e in graph.edges():
+        if (e[0] in tree.nodes() or e[1] in tree.nodes()):
+            edges.append(e)
+    
+    valid_edges = []
+    for v in edges:
+        if not((v[0] in tree.nodes()) and (v[1] in tree.nodes())):
+            valid_edges.append(v)
+    
+    return valid_edges
 
-
-def min_possible_prims_edge(G, T):
-    possible_e = possible_prims_edges(G, T)
+def min_possible_prims_edge(graph, tree):
+    possible_e = valid_incident_edges(graph, tree)
     min_e = possible_e[0]
     for e in possible_e:
-        if cost(G, e) < cost(G, min_e):
+        if cost(graph, e) < cost(graph, min_e):
             min_e = e
-     return min_e
+    return min_e
+
+
