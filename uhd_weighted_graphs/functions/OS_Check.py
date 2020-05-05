@@ -1,6 +1,6 @@
 """
 
-This Script Initlizes the program and also checks to 
+This Script Initializes the program and also checks to 
 see what Operating System it is being executed on
 
 """
