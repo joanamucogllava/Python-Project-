@@ -1,7 +1,10 @@
 """
 
-This Script Initializes the program and also checks to 
+This Script Initlizes the program and also checks to 
 see what Operating System it is being executed on
+
+It is currently specific to the data sets included in
+this project but will be automated in the future
 
 """
 
