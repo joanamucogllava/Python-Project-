@@ -4,8 +4,8 @@ This is a group python project for the UHD CS 1311 class covering Graph Theory a
 Authors:
 
 Dylan "Max" Boozer                                                                                                                   
-Joana Mucogllava
-Jose Amaya
+Joana Mucogllava                                                                                                                      
+Jose Amaya           
 Paulo Seteko
 
 
