@@ -1,4 +1,4 @@
-# Python-Project-
+# Prim's Algorithim CS_1311-
 This is a group python project for the UHD CS 1311 class covering Graph Theory and Prim's Algorithim
 
 Authors:
