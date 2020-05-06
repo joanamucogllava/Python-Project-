@@ -2,6 +2,7 @@ import networkx as nx
 import matplotlib.pyplot as plt
 import numpy as np
 
+# This function will draw the inital graph, G
 def show_weighted_graph(G):
     pos = nx.planar_layout(G)
     nx.draw(G, pos)
@@ -12,6 +13,7 @@ def show_weighted_graph(G):
     plt.show()
    
 
+# This function is called to overlay the subgraph T as a MST
 def draw_subtree(G, T):
     pos = nx.planar_layout(G)
     nx.draw_networkx(G, pos)
@@ -30,4 +32,4 @@ def draw_subtree(G, T):
                            node_size=500,
                            alpha=0.8)
     plt.show()
-
+   
