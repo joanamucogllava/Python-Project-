@@ -2,10 +2,10 @@
 This is a group python project for the UHD CS 1311 class covering Graph Theory and Prim's Algorithim
 
 Authors:
-
-Max Boozer                                                                                                                   
+                                                                                                                  
 Joana Mucogllava                                                                                                                      
-Jose Amaya           
+Jose Amaya      
+Max Boozer      
 Paulo Seteko
 
 
